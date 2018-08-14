@@ -1,0 +1,54 @@
+{
+    "web": {
+        "type": "webapp",
+        "path": "$cli-root/templates/bootplate-web",
+        "description": "Basic web template for webOS - none enyo library.",
+        "metadata": {
+            "id": "w2appinfo"
+        },
+        "deps": ["w2webicon"]
+    },
+    "garnet": {
+        "type": "webapp",
+        "path": "$cli-root/templates/watch/app-garnet",
+        "description": "Enyo W2 bootplate garnet template",
+        "metadata": {
+            "id": "w2appinfo"
+        },
+        "deps": ["garnetlib", "w2enyoicon"],
+        "category": "garnet",
+        "default": true
+    },
+    "w2appinfo": {
+        "type": "webappinfo",
+        "path": "$cli-root/templates/watch/w2appinfo/appinfo.json",
+        "description": "appinfo.json for web app"
+    },
+    "js_service": {
+        "type": "jsservice",
+        "path": "$cli-root/templates/tv-templates/js-service",
+        "description": "js service for webOS Watch",
+        "metadata": {
+            "id": "jsserviceinfo"
+        }
+    },
+    "jsserviceinfo": {
+        "type": "jsserviceinfo",
+        "path": [
+            "$cli-root/templates/tv-templates/serviceinfo/services.json",
+            "$cli-root/templates/tv-templates/serviceinfo/package.json"
+        ],
+        "description": "services.json, package.json for JS service"
+    },
+    "w2webicon": {
+        "type": "icon",
+        "path": "$cli-root/templates/watch/w2webicon",
+        "description": "web app icon files [icon.png (82x82)]"
+    },
+    "garnetlib": {
+        "type": "library",
+        "path": "$cli-root/templates/libraries/garnet-1.5.0-pre.3.2.zip",
+        "description": "garnet library 1.0-alpha-1",
+        "hide": true
+    }
+}

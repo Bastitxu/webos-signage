@@ -1,0 +1,171 @@
+{
+    "requireCommands": ["git"],
+    "basic": {
+        "type": "webapp",
+        "path": "$cli-root/templates/tv-templates/bootplate-web",
+        "description": "basic web app for webOS TV",
+        "metadata": {
+            "id": "webappinfo"
+        },
+        "deps": ["webicon"]
+    },
+    "moonstone-2014": {
+        "type": "webapp",
+        "path": "$cli-root/templates/tv-templates/moonstone-app-old",
+        "branch": "2.3.0-rc",
+        "description": "moonstone app for webOS TV 1.0 (2014)",
+        "metadata": {
+            "id": "webappinfo",
+            "data": {
+                "enyoVersion": "2.3",
+                "onDeviceSource": {
+                    "enyo": "$enyo-framework/2.3/enyo",
+                    "lib/layout": "$enyo-framework/2.3/lib/layout",
+                    "lib/moonstone": "$enyo-framework/2.3/lib/moonstone",
+                    "lib/spotlight": "$enyo-framework/2.3/lib/spotlight",
+                    "lib/enyo-ilib": "$enyo-framework/2.3/lib/enyo-ilib",
+                    "lib/enyo-cordova": "$enyo-framework/2.3/lib/enyo-cordova",
+                    "lib/enyo-webos": "$enyo-framework/2.3/lib/enyo-webos"
+                }
+            }
+        },
+        "deps": ["enyoicon"],
+        "category": "moonstone"
+    },
+    "moonstone-2015": {
+        "type": "webapp",
+        "path": "$cli-root/templates/tv-templates/moonstone-app-old",
+        "branch": "release-2.5.4-pre.16",
+        "description": "moonstone app for webOS TV 2.0 (2015)",
+        "metadata": {
+            "id": "webappinfo",
+            "data": {
+                "enyoVersion": "2.5",
+                "onDeviceSource": {
+                    "enyo": "$enyo-framework/2.5/enyo",
+                    "lib/layout": "$enyo-framework/2.5/lib/layout",
+                    "lib/moonstone": "$enyo-framework/2.5/lib/moonstone",
+                    "lib/spotlight": "$enyo-framework/2.5/lib/spotlight",
+                    "lib/enyo-ilib": "$enyo-framework/2.5/lib/enyo-ilib",
+                    "lib/enyo-cordova": "$enyo-framework/2.5/lib/enyo-cordova",
+                    "lib/enyo-webos": "$enyo-framework/2.5/lib/enyo-webos"
+                }
+            }
+        },
+        "deps": ["enyoicon"],
+        "category": "moonstone"
+    },
+    "moonstone-2016": {
+        "type": "webapp",
+        "path": "$cli-root/templates/tv-templates/moonstone-app",
+        "branch": "release-2.6.3-rc.8",
+        "description": "moonstone app for webOS TV 3.0 (2016)",
+        "metadata": {
+            "id": "webappinfo"
+        },
+        "deps": ["enyoicon"],
+        "category": "moonstone"
+    },
+    "moonstone-2017": {
+        "type": "webapp",
+        "path": "$cli-root/templates/tv-templates/moonstone-app",
+        "branch": "release-2.6.4-rc.13",
+        "description": "moonstone app for webOS TV 3.5 (2017)",
+        "metadata": {
+            "id": "webappinfo"
+        },
+        "deps": ["enyoicon"],
+        "category": "moonstone",
+        "default": true
+    },
+    "sdl_basic": {
+        "type": "nativeapp",
+        "path": "$cli-root/templates/native/2DGames",
+        "description": "SDL Basic UI",
+        "metadata": {
+            "id": "nativeappinfo"
+        },
+        "deps": ["nativeicon"]
+    },
+    "sdl_media": {
+        "type": "nativeapp",
+        "description": "SDL Media App",
+        "path": "$cli-root/templates/native/MediaApp",
+        "metadata": {
+            "id": "nativeappinfo"
+        },
+        "deps": ["nativeicon"]
+    },
+    "sdl_opengles1": {
+        "type": "nativeapp",
+        "description": "SDL with OpenGLES v1.1",
+        "path": "$cli-root/templates/native/OpenGLESv1.1Project",
+        "metadata": {
+            "id": "nativeappinfo"
+        },
+        "deps": ["nativeicon"]
+    },
+    "sdl_opengles2": {
+        "type": "nativeapp",
+        "description": "SDL with OpenGLES v2.0",
+        "path": "$cli-root/templates/native/OpenGLESv2.0Project",
+        "metadata": {
+            "id": "nativeappinfo"
+        },
+        "deps": ["nativeicon"]
+    },
+    "webappinfo": {
+        "type": "webappinfo",
+        "path": "$cli-root/templates/tv-templates/appinfo/appinfo.json",
+        "description": "appinfo.json for web app"
+    },
+    "nativeappinfo": {
+        "type": "nativeappinfo",
+        "path": "$cli-root/templates/nativeappinfo/appinfo.json",
+        "description": "appinfo.json for native app"
+    },
+    "js_service": {
+        "type": "jsservice",
+        "path": "$cli-root/templates/tv-templates/js-service",
+        "description": "js service for webOS TV",
+        "metadata": {
+            "id": "jsserviceinfo"
+        }
+    },
+    "native_service": {
+        "type": "nativeservice",
+        "path": "$cli-root/templates/native-service",
+        "description": "native service for webOS TV",
+        "metadata": {
+            "id": "nativeserviceinfo"
+        }
+    },
+    "jsserviceinfo": {
+        "type": "jsserviceinfo",
+        "path": [
+            "$cli-root/templates/tv-templates/serviceinfo/services.json",
+            "$cli-root/templates/tv-templates/serviceinfo/package.json"
+        ],
+        "description": "services.json, package.json for JS service"
+    },
+    "nativeserviceinfo": {
+        "type": "nativeserviceinfo",
+        "path": "$cli-root/templates/native-service/services.json",
+        "description": "services.json for Native service"
+    },
+    "enyoicon": {
+        "type": "icon",
+        "path": "$cli-root/templates/tv-templates/enyoicon",
+        "description": "enyo app icon files [80x80, 130x130]"
+    },
+    "webicon": {
+        "type": "icon",
+        "path": "$cli-root/templates/tv-templates/webicon",
+        "description": "web app icon files [80x80, 130x130]"
+    },
+    "nativeicon": {
+        "type": "icon",
+        "path": "$cli-root/templates/nativeicon",
+        "description": "native app icon files [80x80, 130x130]"
+    }
+}
